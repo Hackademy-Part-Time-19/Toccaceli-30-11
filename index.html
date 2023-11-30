@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div"
+            style="height: 100px; width: 250px;display: flex; justify-content: center; align-items: center; background-color: aqua;">
+            <p id="p1">Ciao a tutti</p>
+    </div>
+
+    <div
+        style="height: 100px; width: 250px;display: flex; justify-content: center; align-items: center; background-color: red;">
+        <p id="p2">Buonasera a tutti </p>
+    </div>
+
+    <div
+        style="height: 100px; width: 250px;display: flex; justify-content: center; align-items: center; background-color: green;">
+        <p id="p3">Arrivederci</p>
+    </div>
+
+
+
+    <button id="bottone1" onclick="cambiacolore()" style="height: 20px; width: 250px; margin-top: 20px;">Cambia colore
+        in modo casuale </button>
+
+
+    <button id="bottone2" onclick="grassetto()">Grassetto</button>
+
+
+    <button>Interagisci</button>
+
+
+    </div>
+
+
+    <script>
+        var r, g, b, colorerandom;
+        function cambiacolore() {
+            document.getElementById("bottone1")
+            r = Math.random() * 256;
+            g = Math.random() * 256;
+            b = Math.random() * 256;
+
+            colorerandom = "rgb(" + r + ", " + g + ", " + b + ")";
+            document.getElementById("p1").style.backgroundColor = colorerandom;
+
+        }
+       
+         
+        function grassetto(){
+            document.getElementById("bottone2")
+            
+            document.getElementById("p1").style.fontSize.strong 
+            
+        }
+    </script>
+
+</body>
+
+
+</html>
